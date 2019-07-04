@@ -44,9 +44,8 @@ class WorkTimeServiceSpec extends Specification {
         "Leszek" | 2020 | 1     | 11  | 15        | 29
     }
 
-    def"Should get merged intervals"() {
-
-        //doesn't work properly
+    //doesn't work properly
+    def "Should get merged intervals"() {
         given:
 
         def startDate1 = LocalDateTime.of(2020, 6, 6, 6, 0)

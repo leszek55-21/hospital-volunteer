@@ -14,7 +14,7 @@ class ApplicationBeanConfiguration {
 
     @Bean
     fun init(repository: WorkTimeRepository) = CommandLineRunner {
-        println("Init")
+        println("Init - populating database...")
         repository.save(WorkTime("Leszek", LocalDateTime.of(2019, 8, 20, 5, 0),
                 LocalDateTime.of(2019, 8, 20, 7, 0)))
         repository.save(WorkTime("Jan", LocalDateTime.of(2019, 8, 20, 6, 0),
